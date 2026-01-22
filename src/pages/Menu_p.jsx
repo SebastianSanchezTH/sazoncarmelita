@@ -11,7 +11,7 @@ function Menu() {
   return (
     <>
       {/* ===== TÍTULO / HERO ===== */}
-      <div className="container text-center title ">
+      <div className="container text-center title pt-5 mt-5 ">
         <h2>Menú de la casa</h2>
         <p>Sabores auténticos que te harán bailar de felicidad.</p>
 
@@ -112,7 +112,7 @@ function Menu() {
           <div className="col-12 text-center mt-4">
             <button
               className="btn btn-warning btn-lg"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/Delivery")}
             >
               ¡Haz tu pedido aquí!
             </button>

@@ -37,9 +37,9 @@ function App() {
         {/* Ruta para el menú */}
         <Route path="/menu" element={<Menu />} />
         {/* Ruta para domicilios */}
-        <Route path="/domicilios" element={<Delivery />} />
+        <Route path="/delivery" element={<Delivery />} />
         {/* Ruta para acerca de */}
-        <Route path="/acerca-de" element={<About />} />
+        <Route path="/about" element={<About />} />
       </Routes>
 
       <Footer />
