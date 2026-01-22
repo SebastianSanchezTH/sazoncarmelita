@@ -1,0 +1,130 @@
+@font-face {
+  font-family: "Metro Beardy";
+  src: url("../assets/fonts/Metro Beardy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.title h2 {
+  font-family: "Metro Beardy" !important;
+  color: rgb(225, 225, 225) !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 175px !important;
+  font-size: 6em !important;
+}
+
+.title p {
+  color: rgb(225, 225, 225) !important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em !important;
+  font-weight: bold !important;
+}
+
+.btn-yellow {
+  background-color: #feca57 !important;
+  color: #000 !important;
+  border: 2px solid #feca57 !important;
+  border-radius: 5px !important;
+  padding: 0.5rem 1.5rem !important;
+  font-weight: bold !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  width: auto !important;
+  margin-top: 20px !important;
+}
+
+.btn-yellow:hover {
+  background-color: #feca57 !important;
+  color: #000 !important;
+}
+
+.cardcontainer {
+  margin-top: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.card-body .card-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+  color: #951421 !important;
+}
+
+.card-body .card-text {
+  font-size: 1em !important;
+  text-align: left;
+  color: #363636 !important;
+}
+
+.scroll-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #f5c542;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.comentarios {
+  position: relative;
+  background-color: #eaeaea !important;
+  width: 100% !important;
+  height: auto !important;
+  padding: 50px 0 !important;
+  margin-top: 100px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 80px 20px;
+}
+
+.comentarios h3 {
+  font-family: "Metro Beardy" !important;
+  color: #951421 !important;
+  font-size: 3em !important;
+  margin-bottom: 30px !important;
+}
+
+.testimonios-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+}
+
+.testimonio {
+  flex: 1;
+}
+
+.testimonio p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.testimonio span {
+  font-size: 0.9rem;
+  color: #666;
+}

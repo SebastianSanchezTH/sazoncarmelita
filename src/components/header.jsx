@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, NavLink } from "react-router-dom"; // Importa Link y NavLink
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
 
@@ -6,7 +7,9 @@ function Header() {
   return (
     <nav className="navbar navbar-expand-lg navcolor py-3">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
+          {" "}
+          {/* Cambia href por to */}
           <img
             src={logo}
             alt="Logo"
@@ -15,7 +18,7 @@ function Header() {
             className="d-inline-block align-text-top"
           />
           La Sazon De Carmelita
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -30,24 +33,26 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="/">
+              <NavLink className="nav-link" to="/" end>
+                {" "}
+                {/* NavLink para resaltar el activo */}
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">
+              <NavLink className="nav-link" to="/Menu">
                 Menú
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <NavLink className="nav-link" to="/Delivery">
                 Domicilios
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact">
+              <NavLink className="nav-link" to="/About">
                 Acerca de
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>

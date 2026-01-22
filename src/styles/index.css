@@ -6,8 +6,6 @@ html,
 }
 
 body {
-  background: url("../assets/fondos/fondo-principal.png") no-repeat center
-    center;
   background-size: cover; /* ocupa toda la pantalla */
   background-attachment: fixed; /* opcional: para que no se mueva al hacer scroll */
 }
