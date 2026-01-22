@@ -1,0 +1,34 @@
+.footer-custom {
+  background-color: #951421 !important;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footer-custom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  font-size: 0.9rem;
+}
+
+.footer-right {
+  font-size: 0.9rem;
+}
+
+.footer-right div {
+  line-height: 1.2;
+}
+
+.footer-custom a:hover {
+  color: #ffeaa7;
+  text-decoration: none;
+}
+
+.social-icons a {
+  font-weight: bold;
+}
