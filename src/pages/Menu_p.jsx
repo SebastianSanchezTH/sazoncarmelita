@@ -1,4 +1,3 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import bandejaPaisa from "../assets/menu/bandeja-paisa.jpg";
 import frijolada from "../assets/menu/frijolada.jpg";
@@ -6,34 +5,31 @@ import almuerzo from "../assets/menu/almuerzo-ejecutivo.jpg";
 import "../styles/menu.css";
 
 function Menu() {
-  const navigate = useNavigate();
-
   return (
-    <>
-      {/* ===== TÍTULO / HERO ===== */}
-      <div className="container text-center title pt-5 mt-5 ">
-        <h2>Menú de la casa</h2>
-        <p>Sabores auténticos que te harán bailar de felicidad.</p>
+    <div className="app-container">
+      <div className="hero">
+        <div className="title">
+          <h2>Menú de la casa</h2>
+          <p>Sabores auténticos que te harán bailar de felicidad.</p>
 
-        <button
-          className="scroll-btn"
-          onClick={() =>
-            document.getElementById("cardsmenu").scrollIntoView({
-              behavior: "smooth",
-            })
-          }
-        >
-          Explorar el menú
-        </button>
+          <button
+            className="scroll-btn"
+            onClick={() =>
+              document.getElementById("contcard").scrollIntoView({
+                behavior: "smooth",
+              })
+            }
+          >
+            Explorar el menú
+          </button>
+        </div>
       </div>
 
-      {/* ===== CARDS DEL MENÚ ===== */}
-      <div className="containerC">
+      <div id="contcard" className="containerC">
         <section
           id="cardsmenu"
           className="cardcontainer row justify-content-center"
         >
-          {/* Card 1 */}
           <div className="col-md-4 mb-4">
             <div className="card h-100">
               <img
@@ -114,13 +110,13 @@ function Menu() {
               className="btn btn-warning btn-lg"
               onClick={() => navigate("/Delivery")}
             >
-              ¡Haz tu pedido aquí!
+              {" "}
+              ¡Haz tu pedido aquí!{" "}
             </button>
           </div>
         </section>
       </div>
 
-      {/* ===== COMENTARIOS ===== */}
       <div className="containerComentarios mt-5">
         <section id="comment" className="comentarios text-center">
           <h3>¿Qué dicen nuestros clientes?</h3>
@@ -152,7 +148,7 @@ function Menu() {
           </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 

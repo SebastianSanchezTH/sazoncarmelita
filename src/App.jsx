@@ -1,10 +1,10 @@
-import { useState } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom"; // Importa Routes, Route y useNavigate
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Menu from "./pages/Menu_p";
 import Delivery from "./pages/Delivery";
 import About from "./pages/About";
+import ScrollToTop from "./components/ScrollToTop";
 import "./styles/App.css";
 
 function App() {
@@ -34,11 +34,11 @@ function App() {
             </main>
           }
         />
-        {/* Ruta para el menú */}
+
         <Route path="/menu" element={<Menu />} />
-        {/* Ruta para domicilios */}
+
         <Route path="/delivery" element={<Delivery />} />
-        {/* Ruta para acerca de */}
+
         <Route path="/about" element={<About />} />
       </Routes>
 

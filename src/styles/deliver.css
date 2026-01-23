@@ -6,7 +6,8 @@
 }
 
 .app {
-  height: 90vh;
+  height: 91vh;
+  padding-right: 1rem;
 }
 
 .app h2 {
@@ -58,7 +59,7 @@
 }
 
 .containerMap {
-  background-color: rgb(242, 242, 242) !important;
+  background-color: #f2f2f2 !important;
   padding-left: 200px !important;
   padding-right: 200px !important;
 }

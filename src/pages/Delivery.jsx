@@ -3,7 +3,7 @@ import "../styles/deliver.css";
 
 function Delivery() {
   return (
-    <div>
+    <div className="app-container">
       <div className="app">
         <h2>Domicilios</h2>
         <p>
@@ -35,7 +35,6 @@ function Delivery() {
         </div>
       </div>
 
-      {/* Visítanos */}
       <div className="containerMap py-5">
         <h2 className="text-center fw-bold text-danger mb-5">¡Visítanos!</h2>
 

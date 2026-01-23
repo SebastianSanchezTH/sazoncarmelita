@@ -5,7 +5,12 @@
   font-style: normal;
 }
 
-.title h2 {
+.hero {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.hero .title h2 {
   font-family: "Metro Beardy" !important;
   color: rgb(225, 225, 225) !important;
   text-align: center;
@@ -13,8 +18,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 175px !important;
-  font-size: 6em !important;
+  padding-top: 50px !important;
+  font-size: 8em !important;
 }
 
 .title p {
@@ -26,32 +31,53 @@
   align-items: center;
   font-size: 2em !important;
   font-weight: bold !important;
+  padding-bottom: 50px !important;
 }
 
-.btn-yellow {
-  background-color: #feca57 !important;
-  color: #000 !important;
+.scroll-btn {
+  background-color: transparent !important;
+  color: #feca57 !important;
   border: 2px solid #feca57 !important;
   border-radius: 5px !important;
-  padding: 0.5rem 1.5rem !important;
+  padding: 0.5rem 1.5rem;
   font-weight: bold !important;
   transition: all 0.3s ease !important;
   cursor: pointer !important;
-  width: auto !important;
-  margin-top: 20px !important;
+  animation: bounce 1.5s infinite;
 }
 
-.btn-yellow:hover {
+.scroll-btn:hover {
   background-color: #feca57 !important;
   color: #000 !important;
 }
 
-.cardcontainer {
-  margin-top: 400px !important;
-  margin-left: 50px;
-  margin-right: 50px;
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
 }
 
+.cardcontainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cardcontainer .card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-body {
+  height: 400px;
+}
 .card-body .card-title {
   font-weight: bold;
   font-size: 1.5em;
@@ -63,25 +89,6 @@
   font-size: 1em !important;
   text-align: left;
   color: #363636 !important;
-}
-
-.scroll-btn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #f5c542;
-  animation: bounce 1.5s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
 }
 
 .comentarios {
