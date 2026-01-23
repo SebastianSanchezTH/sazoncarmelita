@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Metro Beardy";
+  src: url("../assets/fonts/Metro Beardy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.app-container .hero {
+  height: 90vh;
+}
+
+.hero h2 {
+  font-family: "Metro Beardy";
+  color: rgb(225, 225, 225);
+  text-align: center;
+  padding-top: 150px;
+  font-size: 8em;
+}
+
+.hero p {
+  color: rgb(225, 225, 225);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.history-container {
+  background-color: #dadada;
+}
+
+.history {
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.history h2 {
+  font-family: "Metro Beardy";
+  color: rgb(55, 55, 55);
+  text-align: center;
+  font-size: 4em;
+}
+
+.history p {
+  padding: 1rem 1rem;
+  text-align: left;
+  font-size: 1em;
+  font-weight: normal;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mv-container {
+  background-color: #8b0f1a; /* rojo oscuro */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+/* Card */
+.mv-card {
+  max-width: 900px;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen */
+.mv-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Texto */
+.card-body {
+  padding: 3rem;
+}
+
+.card-title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.questions-container {
+  background-color: #f4f4f4; /* fondo crema */
+  padding: 5rem 1rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-title {
+  font-family: "Metro Beardy";
+  color: rgb(55, 55, 55);
+  text-align: center;
+  font-size: 4em;
+}
+
+.faq-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 1.8rem 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+}
+
+.faq-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.faq-card p {
+  margin: 0;
+  color: #555;
+  line-height: 1.5;
+}
