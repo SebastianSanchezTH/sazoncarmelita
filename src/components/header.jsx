@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom"; // Importa Link y NavLink
 import "../styles/Header.css";
 import logo from "../assets/logo.png";
@@ -8,8 +7,6 @@ function Header() {
     <nav className="navbar navbar-expand-lg navcolor py-3">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          {" "}
-          {/* Cambia href por to */}
           <img
             src={logo}
             alt="Logo"
